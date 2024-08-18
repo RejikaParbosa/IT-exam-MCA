@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE BookStore SYSTEM "bookstore.dtd">
+<?xml-stylesheet type="text/css" href="bookstore.css"?>
+<BookStore>
+    <Book>
+        <BookName release_date="2023-01-01">Programming with C</BookName>
+        <Author>
+            <FirstName>T</FirstName>
+            <MiddleName>Jeyapoovan</MiddleName>
+            </Author>
+        <Genre>Technology</Genre>
+        <Publisher>VIKAS PUBLISHING HOUSE PVT LTD</Publisher>
+        <Price>350</Price>
+    </Book>
+    <Book>
+        <BookName release_date="2021-05-15">Clean Code</BookName>
+        <Author>
+            <FirstName>Robert</FirstName>
+            <MiddleName>C.</MiddleName>
+            <LastName>Martin</LastName>
+        </Author>
+        <Genre>Software Engineering</Genre>
+        <Publisher>Prentice Hall</Publisher>
+        <Price>49.99</Price>
+    </Book>
+    <Book>
+        <BookName release_date="2022-08-08">Introduction to Algorithms</BookName>
+        <Author>
+            <FirstName>Thomas</FirstName>
+            <MiddleName>H.</MiddleName>
+            <LastName>Cormen</LastName>
+        </Author>
+        <Genre>Technology</Genre>
+        <Publisher>MIT Press</Publisher>
+        <Price>89.99</Price>
+    </Book>
+</BookStore>
