@@ -1,0 +1,11 @@
+<!ELEMENT BookStore (Book+)>
+<!ELEMENT Book (BookName, Author, Genre, Publisher, Price)>
+<!ELEMENT BookName (#PCDATA)>
+<!ATTLIST BookName release_date CDATA #REQUIRED>
+<!ELEMENT Author (FirstName, MiddleName?, LastName)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT MiddleName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT Genre (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+<!ELEMENT Price (#PCDATA)>
