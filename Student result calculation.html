@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Student Result Calculator</title>
+    <script type="text/javascript">
+        function calculateResult() {
+            // Get the input values
+            var name = document.getElementById("name").value;
+            var subject1 = parseInt(document.getElementById("subject1").value);
+            var subject2 = parseInt(document.getElementById("subject2").value);
+            var subject3 = parseInt(document.getElementById("subject3").value);
+
+            // Check if any subject mark is less than 35
+            if (subject1 < 35 || subject2 < 35 || subject3 < 35) {
+                document.getElementById("result").innerHTML = name + " has Failed. Grade: D";
+                return;
+            }
+
+            // Calculate total and average
+            var total = subject1 + subject2 + subject3;
+            var average = total / 3;
+
+            // Determine result and grade based on the average
+            var result, grade;
+            if (average >= 75) {
+                result = "Distinction";
+                grade = "A+";
+            } else if (average >= 60) {
+                result = "First Class";
+                grade = "A";
+            } else if (average >= 50) {
+                result = "Distinction";
+                grade = "B";
+            } else if (average >= 35) {
+                result = "Distinction";
+                grade = "C";
+            } else {
+                result = "Fail";
+                grade = "D";
+            }
+
+            // Display the result and grade
+            document.getElementById("result").innerHTML = name + " has achieved " + result + ". Grade: " + grade;
+        }
+    </script>
+</head>
+<body>
+    <h2>Student Result Calculator</h2>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" /><br /><br />
+
+    <label for="subject1">Subject 1 Marks:</label>
+    <input type="number" id="subject1" /><br /><br />
+
+    <label for="subject2">Subject 2 Marks:</label>
+    <input type="number" id="subject2" /><br /><br />
+
+    <label for="subject3">Subject 3 Marks:</label>
+    <input type="number" id="subject3" /><br /><br />
+
+    <button type="button" onclick="calculateResult()">Calculate Result</button>
+
+    <h3 id="result"></h3>
+</body>
+</html>
