@@ -1,0 +1,26 @@
+Book {
+    text-align: center;
+}
+
+BookName {
+    display: block;
+    font-family: TimesNewRoman;
+    font-style: italic;
+    border: dotted green 1px;
+}
+
+Author {
+    display: block;
+    font-family: Arial;
+    font-size: 12pt;
+    color: purple;
+    width: 500px;
+    margin: auto;
+}
+
+Genre, Publisher, Price {
+    display: block;
+    font-family: Garamond;
+    font-weight: bold;
+    color: blue;
+}
