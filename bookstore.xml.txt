@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookStore>
+    <Book>
+        <BookName release_date="2023-01-01">The Art of Computer Programming</BookName>
+        <Author>
+            <FirstName>Donald</FirstName>
+            <MiddleName>E.</MiddleName>
+            <LastName>Knuth</LastName>
+        </Author>
+        <Genre>Technology</Genre>
+        <Publisher>Addison-Wesley</Publisher>
+        <Price>199.99</Price>
+    </Book>
+    <Book>
+        <BookName release_date="2021-05-15">Clean Code</BookName>
+        <Author>
+            <FirstName>Robert</FirstName>
+            <MiddleName>C.</MiddleName>
+            <LastName>Martin</LastName>
+        </Author>
+        <Genre>Software Engineering</Genre>
+        <Publisher>Prentice Hall</Publisher>
+        <Price>49.99</Price>
+    </Book>
+    <Book>
+        <BookName release_date="2022-08-08">Introduction to Algorithms</BookName>
+        <Author>
+            <FirstName>Thomas</FirstName>
+            <MiddleName>H.</MiddleName>
+            <LastName>Cormen</LastName>
+        </Author>
+        <Genre>Technology</Genre>
+        <Publisher>MIT Press</Publisher>
+        <Price>89.99</Price>
+    </Book>
+</BookStore>
